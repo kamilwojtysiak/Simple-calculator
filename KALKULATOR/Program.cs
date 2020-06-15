@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KALKULATOR
+namespace Calculator
 {
     class Program
     {
@@ -16,20 +16,20 @@ namespace KALKULATOR
             switch (userChoice)
             {
                 case 1:
-                    Adding a = new Adding();
-                    a.Calculate();
+                    Addition addition = new Addition();
+                    addition.Calculate();
                     break;
                 case 2:
-                    Subtraction s = new Subtraction();
-                    s.Calculate();
+                    Subtraction subtraction = new Subtraction();
+                    subtraction.Calculate();
                     break;
                 case 3:
-                    Multiply m = new Multiply();
-                    m.Calculate();
+                    Multiply multiply = new Multiply();
+                    multiply.Calculate();
                     break;
                 case 4:
-                    Division d = new Division();
-                    d.Calculate();
+                    Division division = new Division();
+                    division.Calculate();
                     break;
             }
         }
