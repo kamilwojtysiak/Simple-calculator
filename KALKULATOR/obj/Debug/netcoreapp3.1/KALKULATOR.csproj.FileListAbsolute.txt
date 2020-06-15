@@ -1,0 +1,13 @@
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\bin\Debug\netcoreapp3.1\KALKULATOR.exe
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\bin\Debug\netcoreapp3.1\KALKULATOR.deps.json
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\bin\Debug\netcoreapp3.1\KALKULATOR.runtimeconfig.json
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\bin\Debug\netcoreapp3.1\KALKULATOR.runtimeconfig.dev.json
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\bin\Debug\netcoreapp3.1\KALKULATOR.dll
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\bin\Debug\netcoreapp3.1\KALKULATOR.pdb
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.csprojAssemblyReference.cache
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.AssemblyInfoInputs.cache
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.AssemblyInfo.cs
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.dll
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.pdb
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.csproj.CoreCompileInputs.cache
+E:\Projekty\zadanka\szkołaDotneta\KALKULATOR\KALKULATOR\obj\Debug\netcoreapp3.1\KALKULATOR.genruntimeconfig.cache
