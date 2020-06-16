@@ -1,37 +1,23 @@
 ﻿using System;
+using Calculator.Enum;
+
 
 namespace Calculator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome in my calculator \nPress enter to begin.");
-            Console.ReadLine();
-            Console.WriteLine("What opertaion you want to do? \n1.ADDING \n2.SUBTRACTION \n3.MULTIPLY \n4.DIVISION");
-            Console.Write("Choose  number and press 'enter': ");
+            double number1 = 10;
+            double number2 = 5;
 
-            int userChoice = int.Parse(Console.ReadLine());  
+            Operation operation = Operation.Division;
 
-            switch (userChoice)
-            {
-                case 1:
-                    Addition addition = new Addition();
-                    addition.Calculate();
-                    break;
-                case 2:
-                    Subtraction subtraction = new Subtraction();
-                    subtraction.Calculate();
-                    break;
-                case 3:
-                    Multiply multiply = new Multiply();
-                    multiply.Calculate();
-                    break;
-                case 4:
-                    Division division = new Division();
-                    division.Calculate();
-                    break;
-            }
+            IOperations typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
+
+            Calculator context = new Calculator(typeOfCalculation);
+
+            Console.WriteLine("Wynik = " + context.Calculate(number1, number2));
         }
     }
 }
