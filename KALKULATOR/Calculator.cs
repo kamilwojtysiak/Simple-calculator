@@ -6,16 +6,26 @@ namespace Calculator
 {
     public class Calculator
     {
-        private IOperations _calculation;
+        private IOperation _operation;
 
-        public Calculator(IOperations calculation)
+        public Calculator(IOperation operation)
         {
-            _calculation = calculation;
+            _operation = operation;
         }
 
         public double Calculate(double number1, double number2)
         {
-            return _calculation.Calculate(number1, number2);
+            return _operation.Calculate(number1, number2);
+        }
+
+        public IList<IOperation> GetOperations()
+        {
+
+        }
+
+        public IOperation GetOperation(string operationName)
+        {
+
         }
     }
 }

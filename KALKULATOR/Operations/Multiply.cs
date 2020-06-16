@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Calculator
 {
-    public class Multiply : IOperations
+    public class Multiply : IOperation
     {
         public double Calculate(double number1, double number2)
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Calculator.Enum;
 
 
@@ -13,7 +14,7 @@ namespace Calculator
 
             Operation operation = Operation.Division;
 
-            IOperations typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
+            IOperation typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
 
             Calculator calculator = new Calculator(typeOfCalculation);
 
