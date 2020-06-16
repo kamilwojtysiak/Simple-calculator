@@ -15,9 +15,9 @@ namespace Calculator
 
             IOperations typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
 
-            Calculator context = new Calculator(typeOfCalculation);
+            Calculator calculator = new Calculator(typeOfCalculation);
 
-            Console.WriteLine("Wynik = " + context.Calculate(number1, number2));
+            Console.WriteLine("Wynik = " + calculator.Calculate(number1, number2));
         }
     }
 }
