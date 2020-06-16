@@ -6,6 +6,6 @@ namespace Calculator
 {
     public interface IOperation
     {
-        public double Calculate(double number1, double number2);
+        double Calculate(double number1, double number2);
     }
 }

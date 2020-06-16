@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.Enum;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,7 +21,7 @@ namespace Calculator
 
         public IList<IOperation> GetOperations()
         {
-
+         
         }
 
         public IOperation GetOperation(string operationName)
