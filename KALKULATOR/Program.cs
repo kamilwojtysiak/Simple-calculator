@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Reflection;
 using Calculator.Enum;
-
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Calculator
 {
@@ -9,20 +10,31 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            double number1 = 10;
-            double number2 = 5;
-
-            Operation operation = Operation.Division;
-
             Calculator calculator = new Calculator();
 
-            calculator.GetOperations(); 
+            IList<IOperation> operations = calculator.GetOperations();
 
-            //IOperation typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
+            IOperation choosenOperation;
 
-            //Calculator calculator = new Calculator(typeOfCalculation);
+            do
+            {
+                Console.WriteLine("select operation");
 
-            //Console.WriteLine("Wynik = " + calculator.Calculate(number1, number2));
+                foreach (var operation in operations)
+                {
+                    Console.WriteLine(operation.GetName());
+                }
+
+                choosenOperation = operations.SingleOrDefault(o => o.GetName() == "sss");
+                Console.ReadKey();
+
+                if (choosenOperation == null)
+                {
+                    Console.WriteLine("zła nazwa");
+                }      
+            } while (choosenOperation == null);
+
+            Console.WriteLine(choosenOperation.Calculate(1, 2));
         }
     }
 }
