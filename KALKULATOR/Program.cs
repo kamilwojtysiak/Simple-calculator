@@ -14,11 +14,15 @@ namespace Calculator
 
             Operation operation = Operation.Division;
 
-            IOperation typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
+            Calculator calculator = new Calculator();
 
-            Calculator calculator = new Calculator(typeOfCalculation);
+            calculator.GetOperations(); 
 
-            Console.WriteLine("Wynik = " + calculator.Calculate(number1, number2));
+            //IOperation typeOfCalculation = typeOfCalculationFactory.GetCalculation(operation);
+
+            //Calculator calculator = new Calculator(typeOfCalculation);
+
+            //Console.WriteLine("Wynik = " + calculator.Calculate(number1, number2));
         }
     }
 }
