@@ -25,8 +25,9 @@ namespace Calculator
                     Console.WriteLine(operation.GetName());
                 }
 
-                choosenOperation = operations.SingleOrDefault(o => o.GetName() == "sss");
-                Console.ReadKey();
+                string userInput = Console.ReadLine();
+
+                choosenOperation = operations.SingleOrDefault(o => o.GetName() == userInput);
 
                 if (choosenOperation == null)
                 {
@@ -34,7 +35,7 @@ namespace Calculator
                 }      
             } while (choosenOperation == null);
 
-            Console.WriteLine(choosenOperation.Calculate(1, 2));
+            Console.WriteLine(choosenOperation.Calculate(10, 2));
         }
     }
 }
