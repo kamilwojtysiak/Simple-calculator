@@ -18,12 +18,15 @@ namespace Calculator
 
             do
             {
-                Console.WriteLine("select operation");
+                Console.WriteLine("Select operation:");
 
                 foreach (var operation in operations)
                 {
                     Console.WriteLine(operation.GetName());
                 }
+
+                Console.WriteLine();
+                Console.Write("Operation name: ");
 
                 string userInput = Console.ReadLine();
 
@@ -31,11 +34,11 @@ namespace Calculator
 
                 if (choosenOperation == null)
                 {
-                    Console.WriteLine("zła nazwa");
+                    Console.WriteLine("Wrong name!");
                 }      
             } while (choosenOperation == null);
 
-            Console.WriteLine(choosenOperation.Calculate(10, 2));
+            Console.WriteLine("Result: " + choosenOperation.Calculate(10, 2));
         }
     }
 }

@@ -9,8 +9,6 @@ namespace Calculator
 {
     public class Calculator
     {
-        private IOperation _operation;
-
         public Calculator()
         {
         
@@ -26,13 +24,16 @@ namespace Calculator
 
             Type[] types = assembly.GetTypes();
 
-            IEnumerable<Type> typeOfOperation = types.Where(t => t.GetInterfaces().Contains(type));
+            IOperation createdOperation;
 
-            
+            IEnumerable<Type> typesOfOperations = types.Where(t => t.GetInterfaces().Contains(type)).ToList();
 
-            var instantiatedOperation = Activator.CreateInstance(type) as IOperation;
+            foreach (var operation in typesOfOperations)
+            {    
+                createdOperation = Activator.CreateInstance(operation) as IOperation;
 
-            operations.Add(instantiatedOperation);
+                operations.Add(createdOperation);
+            }
 
             return operations;
         }
