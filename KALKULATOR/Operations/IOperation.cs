@@ -7,5 +7,8 @@ namespace Calculator
     public interface IOperation
     {
         double Calculate(double number1, double number2);
+
+        string GetName();
     }
+
 }

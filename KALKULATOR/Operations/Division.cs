@@ -10,5 +10,10 @@ namespace Calculator
         {
             return number1 / number2;
         }
+
+        public string GetName()
+        {
+            return "Division";
+        }
     }
 }
